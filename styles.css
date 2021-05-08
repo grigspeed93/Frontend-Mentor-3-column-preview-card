@@ -1,0 +1,128 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: hsl(0, 0%, 95%);
+  padding: 50px 0px;
+}
+
+.icon {
+  width: 50px;
+  height: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1040px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card:nth-child(1) {
+  background: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) {
+  background: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+  background: hsl(179, 100%, 13%);
+}
+
+.card {
+  padding: 40px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.2rem;
+  padding: 30px 0px;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.learn-more-bttn {
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-top: 100px;
+  font-weight: 600;
+}
+
+.card:nth-child(1) .learn-more-bttn {
+  color: hsl(31, 77%, 52%);
+  border: 1px solid hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) .learn-more-bttn {
+  color: hsl(184, 100%, 22%);
+  border: 1px solid hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) .learn-more-bttn {
+  color: hsl(179, 100%, 13%);
+  border: 1px solid hsl(179, 100%, 13%);
+}
+
+.card:nth-child(1) .learn-more-bttn:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border-color: white;
+}
+
+.card:nth-child(2) .learn-more-bttn:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  border-color: white;
+}
+
+.card:nth-child(3) .learn-more-bttn:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  border-color: white;
+}
+
+.learn-more-bttn:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  body {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .cards-container {
+    flex-direction: row;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
